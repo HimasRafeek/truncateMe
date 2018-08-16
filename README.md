@@ -22,29 +22,19 @@ Jquery Plugin to truncate Text easily
 ## Js
 
 ```javascript
-$.truncateMe();
+ $.truncateMe();
 ```
 
-## Default options Applied
+## Default options Applied / Option Available
 
 ```javascript
-$.truncateMe({
-    class: '.truncateMe', // Default
-    trimTo: 50, // Default
-    add: '.....' // Default
-});
-```
-
-
-## Options Available
-
-```javascript
-$.truncateMe({
-  class: '.truncateMe', // Default
-  trimTo: 50, // Default
-  trimEach: 'data-truncateMe', // Default - null  [Use attr]
-  add: '....' // Default
-});
+ $.truncateMe({
+      elem: '.truncateMe',                                // Default  - jQuery Selector
+      trimTo: 50,                                         // Default  - Words By Default
+      trimEach: null,                                     // Default  - attr for trim Individual [data-truncateme="5"]
+      add: '<span class="truncateMe-dots">.....</span>',  // Default  - after truncation (concat)
+      words: true                                         // Default  - Limit with words (Set to false to limit by Characters)
+  });
 ```
 
 
@@ -57,8 +47,9 @@ $.truncateMe({
 
 ```javascript
 $.truncateMe({
-  trimTo: 100, // Characters
+  trimTo: 10, // Words By Default
 });
 ```
 
-## Thank you.
+## Version 1.5.0
+More Features Added.
