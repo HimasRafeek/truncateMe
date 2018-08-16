@@ -1,5 +1,5 @@
 # truncateMe
-Jquery Plugin to truncate Text easily
+Jquery Plugin to truncate texts easily
 
 
 ## Requirements
